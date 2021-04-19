@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    height: 60px;
+    width: 120px;
+    border: 0;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background-color: lightblue;
+}
+
+.tabela{
+    width: 60%;
+    padding: 5px;
+    font-size: 23px;
+}
+
+.tabela td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.tabela tr:nth-child(even){
+    background-color: lightgreen;
+}

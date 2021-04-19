@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style-global.css">
+    <link rel="stylesheet" href="stylesheets/style-busca.css">
+    <title>Busca Pedido</title>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Buscar Pedido</h1>
+        <div class="meio">
+            <form action="/resultado" class="busca-codigo" method="POST">
+                <input type="text" name="codigo" placeholder="Digite o codigo">
+                <button name="enviar-codigo" id="enviar-codigo">Enviar</button>
+            </form>
+            <div class="busca-qrcode">
+                <a href="https://play.google.com/store/apps/details?id=com.gamma.scan&hl=pt_BR&gl=US" class="qrcode" target="new_blank"> <h2>QRCode</h2> <span class="link-qrcode"> <img src="/image/qrcode.png" alt="qrcode"></span></a>
+            </div>
+        </div>
+        <p><a href="/index">Voltar para home teste </a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style-global.css">
+    <link rel="stylesheet" href="stylesheets/style-controle.css">
+    <title>Controle fila</title>
+</head>
+<body>
+     <header class="form-header">
+         <form action="" >
+             <label for="guiche-label">Guiche: </label>
+             <label for="guiche-atual"> 1 </label>
+
+             <label for="usuario-label">Usuário: </label>
+             <label for="usuario-atual"> joão oliveira </label>
+         </form>
+
+         <h1>Gerenciamento filas</h1>
+     </header>
+
+     <main class="main-controle">
+         <div>
+             <table class="tabela">
+                 <thead>
+                     <th> </th>
+                     <th>Pedido</th>
+                     <th>Guiche</th>
+                 </thead>
+                <tr>
+                    <td><form action=""><input type="checkbox" id="seletor-pedido" name="seletor-pedido"></form></td>
+                    <td>23</td>
+                    <td>1</td>
+                </tr>  
+                <tr>
+                    <td><form action=""><input type="checkbox" id="seletor-pedido" name="seletor-pedido"></form></td>
+                    <td>24</td>
+                    <td>1</td>
+                </tr>  
+                 </tbody>
+             </table>
+         </div>
+
+         <nav>
+             <form action="" class="form-controle">
+                <button class="button" name="chamar-fila">Chamar</button>
+                <button class="button" name="repetir-fila">Repetir chamada</button>
+                <button class="button" name="ausente-fila">Ausente</button>
+                <button class="button" name="finalizar-fila">Finalizar</button>
+             </form>
+         </nav>
+     </main>
+</body>
+</html>
