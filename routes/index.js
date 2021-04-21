@@ -1,28 +1,10 @@
-var express = require('express');
-var router = express.Router();
-const telaPrincipal = require('../Controller/index');
+const express = require('express');
+const router = express.Router();
+const index = require('../Controller/index');
 
 /* GET home page. */
-router.get('/', telaPrincipal.principal);
-const series = [
-    {
-        id:1 ,
-        nome: "friends"
-    },
-    {
-        id:2 ,
-        nome: "naruto"
-    },
-    {
-        id:3 ,
-        nome: "boku no hero"
-    }
-]
-router.get('/serie/:id', (req,res) => {
-    let {id} = req.params; 
-    let [buscaserie] = series.filter( (serie) => {return serie.id == id });
-    console.log(buscaserie);
-    res.send(buscaserie);
-});
+router.get('/', index.principal);
+
+router.get('/home', index.dashboard);
 
 module.exports = router;

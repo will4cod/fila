@@ -1,18 +1,30 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('passport');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-const loginRouter = require('./routes/login');
-const controleRouter = require('./routes/controle-fila');
-const painelRouter = require('./routes/painel');
-const buscaRouter = require('./routes/busca-pedido');
-const resultadoRouter = require('./routes/resultado');
+const welcomeRouter = require('./routes/index');
+const userRouter = require('./routes/users');
+const pedidoRouter = require('./routes/pedido');
+const configRouter = require('./routes/config');
+//const resultadoRouter = require('./routes/resultado');
 
 var app = express();
+
+//Express session
+app.use(session({
+  secret: 'secret',
+  resave: true,
+  saveUninitialized: true
+}))
+
+//Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,13 +36,23 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/login', loginRouter);
-app.use('/controle', controleRouter);
-app.use('/painel',painelRouter);
-app.use('/busca', buscaRouter);
-app.use('/resultado', resultadoRouter);
+//Connect flash
+app.use(flash ())
+
+//Globol variables 
+app.use((req, res, next) => {
+  res.locals.success_msg = req.flash('success_msg')
+  res.locals.error_msg = req.flash('error_msg')
+  //Flash for passport
+  res.locals.error = req.flash('error')
+  next()
+})
+
+app.use('/', welcomeRouter);
+app.use('/usuario', userRouter);
+//app.use('/resultado', resultadoRouter);
+app.use('/pedido', pedidoRouter);
+app.use('/configuracao', configRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
