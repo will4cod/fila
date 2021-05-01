@@ -7,10 +7,10 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
-const welcomeRouter = require('./routes/index');
-const userRouter = require('./routes/users');
-const pedidoRouter = require('./routes/pedido');
-const configRouter = require('./routes/config');
+const welcomeRouter = require('./src/routes/index');
+const userRouter = require('./src/routes/users');
+const pedidoRouter = require('./src/routes/pedido');
+const configRouter = require('./src/routes/config');
 //const resultadoRouter = require('./routes/resultado');
 
 var app = express();
@@ -27,7 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
