@@ -1,0 +1,28 @@
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.grafico{
+    width: 100%;
+    height: 60%;
+}
+
+.acoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.card-acao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-acao img{
+    width: 30%;
+}

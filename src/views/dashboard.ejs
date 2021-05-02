@@ -1,2 +1,39 @@
-<%- include('partials/_header.ejs') %>
-<p class="lead mb-3"> <%- name %></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/stylesheets/style-global.css'>
+    <link rel="stylesheet" href='/stylesheets/style-header.css'>
+    <link rel="stylesheet" href='/stylesheets/style-dashboard.css'>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <%- include('partials/_header.ejs') %>
+    <p class="lead mb-3">Ola <%- name %></p>
+
+    <main class="conteudo-principal">
+        <section class="grafico">
+            <img src="/image/grafico.jpg" alt="">
+        </section>
+        <section class="acoes">
+            <div class="card-acao">
+                <img src="/image/add.png" alt="Adicionar pedido">
+                <h2>Adicionar pedido</h2>
+            </div>
+            <div class="card-acao">
+                <img src="/image/settings.png" alt="Controle fila">
+                <h2>Controle fila</h2>
+            </div>
+            <div class="card-acao">
+                <img src="/image/central-de-atendimento.png" alt="Mudar guiche">
+                <h2>Alterar guiche</h2>
+            </div>
+        </section>
+  </main>
+  
+</body>
+</html>
+
