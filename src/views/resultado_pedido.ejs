@@ -9,11 +9,26 @@
     <title>Resultado pedido</title>
 </head>
 <body>
-    <ul class="numero-pedido">
-        <li><%= numeroPedido %></li>
-        <li><%= posicaoFila %></li>
-        <li><span class="icone-lista"><img src="/image/relogio.png" alt=""></span><%= tempoMedio %></li>
-    </ul>
+    <h1>Pedido</h1>
+    <div class="base">
+        <div class="estrutura numeropedido">
+            <p>Pedido: <%= numeroPedido %></p>
+        </div>
+        <div class="estrutura numeropedido">
+           <p>Posição: <%= posicaoFila %></p> 
+        </div>
+        <div class="estrutura numeropedido">
+            <p>Tempo Medio: <%= tempoMedioFila %></p>
+        </div>
+        <div class="estrutura numeropedido">
+            Itens
+            <ul class="listaitens">
+                <% for(iten of itens) { %>
+                    <li> <%=iten %></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>

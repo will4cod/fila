@@ -11,6 +11,7 @@ const welcomeRouter = require('./src/routes/index');
 const userRouter = require('./src/routes/users');
 const pedidoRouter = require('./src/routes/pedido');
 const configRouter = require('./src/routes/config');
+const painelRouter = require('./src/routes/painel');
 //const resultadoRouter = require('./routes/resultado');
 
 var app = express();
@@ -53,6 +54,7 @@ app.use('/usuario', userRouter);
 //app.use('/resultado', resultadoRouter);
 app.use('/pedido', pedidoRouter);
 app.use('/configuracao', configRouter);
+app.use('/painel', painelRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
