@@ -1,21 +1,88 @@
 body{
     height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info{
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.info p:first-child {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-right: 2%;
+}
+
+.main-painel{
     display: flex;
     flex-direction: column;
+    height: 89%;
+    justify-content: space-between;
 }
 
-main{
+.chamada{
     display: flex;
-    flex-grow: 3;
+    justify-content: space-between;
 }
 
-.chamada-atual, .ultimas-chamadas{
-    width: 60%;
-    height: 60%;
-    border: 5px solid black;
+.senha-atual{
+    width: 80%;
 }
 
-footer{
-    color: whitesmoke;
-    background-color: black;
+.senha-atual p{
+    color: blue;
+    font-size: 5em;
+    margin-left: 5%;
+    margin-bottom: 0;
 }
+
+.senha-atual h1{
+    font-size: 12em;
+    color: black;
+    padding-left: 10%;
+}
+
+.guiche-atual{
+    align-self: center;
+    margin-right: 10%;
+}
+
+.guiche-atual p{
+    color: blue;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+.guiche-atual h2{
+    font-size: 5em;
+    color: black;
+}
+
+.ultimas-chamadas {
+    border-top: 5px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.ultimas-chamadas ul{
+    list-style: none;
+}
+
+.ultimas-chamadas ul li:first-child{
+    font-size: 3em;
+    color: black;
+}
+
+.ultimas-chamadas ul li{
+    color: blue;
+    font-size: 1.5em;
+}
+

@@ -9,35 +9,35 @@
     <title>Painel de senhas</title>
 </head>
 <body>
-    <%- include('partials/_header.ejs') %>
     <header>
         <h1>Fila App</h1>
         <div class="info">
-           <p> Dia 29/03/2021 Hora: 23:10 </p>
+            <p>Hora: 23:10</p>
+            <p>Dia 29/03/2021</p>
         </div>
     </header>
 
-    <main>
-        <div class="chamada-atual">
-            
+    <main class="main-painel">
+        <div class="chamada">
+            <div class="senha-atual">
+                <p>Fila (Nome da loja)</p>
+                <h1>0008</h1> 
+            </div>
+            <div class="guiche-atual">
+                <p>Guichê</p>
+                <h2>1</h2>
+            </div>
         </div>
 
         <div class="ultimas-chamadas">
-            <table class="tabela">
-                <thead>
-                    <th>Pedido</th>
-                    <th>Guiche</th>
-                </thead>
-               <tr>
-                   <td>23</td>
-                   <td>1</td>
-               </tr>  
-               <tr>
-                <td>24</td>
-                <td>1</td>
-            </tr>  
-                </tbody>
-            </table>
+            <ul>
+                <li>7</li>
+                <li>Guichê: 1</li>
+            </ul>
+            <ul>
+                <li>6</li>
+                <li>Guichê: 1</li>
+            </ul>
         </div>
     </main>
 
