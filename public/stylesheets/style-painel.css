@@ -9,9 +9,16 @@ header{
 }
 
 .info{
-    background-color: lightskyblue;
     display: flex;
     flex-direction: row;
+    border-top: 70px solid coral;
+    border-left: 30px solid transparent;
+    height: 0;
+    position: relative;
+}
+
+.info p{
+    position: absolute;
 }
 
 .info p:first-child {

@@ -46,7 +46,7 @@
     background-color: coral;
     padding: 0% 3%;
     width: 65%;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     font-size: 1.3em;
     margin: 0;
