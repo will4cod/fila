@@ -1,0 +1,139 @@
+.modalAddPedidoContainer {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+.modalControleFilaContainer {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+.modalAlterarGuicheContainer {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+.modalAddPedido {
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid coral;
+    position: relative;
+    top: -200px;
+}
+
+.modalControleFila {
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid coral;
+    position: relative;
+    top: -200px;
+}
+
+.modalAlterarGuiche {
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid coral;
+    position: relative;
+    top: -200px;
+}
+
+.fechar {
+    position: absolute;
+    background: white;
+    color: coral;
+    font-size: 1.4em;
+    top: 8px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    border: 2px solid coral;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    background: coral;
+    color: white;
+}
+
+.modalAddPedidoContainer.mostrar {
+    display: flex;
+}
+
+.modalControleFilaContainer.mostrar {
+    display: flex;
+}
+
+.modalAlterarGuicheContainer.mostrar {
+    display: flex;
+}
+
+.guicheBtnAddPedido {
+    background: white;
+    color: coral;
+    font-size: 2.0em;
+    border-radius: 10px;
+    border: 2px solid coral;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.guicheBtnAddPedido:hover {
+    background: coral;
+    color: white;
+ }
+
+ .adicionarPedidoBtn {
+    background: white;
+    color: coral;
+    font-size: 1.6em;
+    border-radius: 10px;
+    border: 2px solid coral;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.adicionarPedidoBtn:hover {
+    background: coral;
+    color: white;
+ }
+
+ .inputAddPedido {
+    flex: 1;
+    resize: none;
+    background-color: rgba(255,127,80,0.20);
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    height: 40px;
+ }
