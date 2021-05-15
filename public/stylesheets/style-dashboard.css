@@ -5,9 +5,37 @@
     justify-content: space-between;
 }
 
+.controle{
+    display: flex;    
+    justify-content: space-around;
+}
+
 .grafico{
-    width: 100%;
+    width: 50%;
     height: 60%;
+}
+
+.table{
+    width: 100%;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.table thead{
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    padding: 2%;
+}
+
+.table tbody{
+    border-bottom: 1px solid lightgray;
+    padding: 2%;
+}
+
+.table th, td{
+    padding: 0.4em 1.1em;
 }
 
 .acoes{
@@ -26,3 +54,10 @@
 .card-acao img{
     width: 30%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .controle{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+} 
