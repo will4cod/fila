@@ -9,23 +9,30 @@ header{
 }
 
 .info{
-    display: flex;
-    flex-direction: row;
-    border-top: 70px solid coral;
-    border-left: 30px solid transparent;
+    border-top: 5em solid coral;
+    border-left: 2em solid transparent;
     height: 0;
+    width: 20%;
+    margin-left: auto;
     position: relative;
 }
 
 .info p{
     position: absolute;
+    bottom:0;
+    right: 10%;
+    font-size: 1.6em;
 }
 
 .info p:first-child {
     color: white;
-    font-size: 1.5em;
+    font-size: 2.2em;
     font-weight: 300;
     padding-right: 2%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin: 0;
 }
 
 .main-painel{
@@ -46,15 +53,15 @@ header{
 
 .senha-atual p{
     color: blue;
-    font-size: 5em;
+    font-size: 6em;
     margin-left: 5%;
     margin-bottom: 0;
 }
 
 .senha-atual h1{
-    font-size: 12em;
+    font-size: 13em;
     color: black;
-    padding-left: 10%;
+    text-align: center;
 }
 
 .guiche-atual{
@@ -64,13 +71,14 @@ header{
 
 .guiche-atual p{
     color: blue;
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 300;
 }
 
 .guiche-atual h2{
-    font-size: 5em;
+    font-size: 8em;
     color: black;
+    text-align: center;
 }
 
 .ultimas-chamadas {

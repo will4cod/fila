@@ -12,8 +12,8 @@ const consultaDados = {
     },//Retorna a lista de pedidos com a data atual
     listaPedidosDeHoje: function(){
         const diaAtual = format(new Date(), 'dd/MM/yyyy');
-        const pedidosInvertidos = this.listaTodosPedidos().reverse();
-        const listaPedidos = pedidosInvertidos.filter((pedido)=> {
+        const pedidos = this.listaTodosPedidos();
+        const listaPedidos = pedidos.filter((pedido)=> {
             if(pedido.data == diaAtual){
                 return(pedido);
             }
@@ -43,6 +43,13 @@ const consultaDados = {
         }else{
             return posicao + 1;
         }
+    },
+    listaPedidosAndamento: function(){
+        const pedidos = this.listaTodosPedidos();
+
+        const listaFiltrada = pedidos.filter((array) => array.status === 'andamento');
+
+        return listaFiltrada;
     }
 }
 

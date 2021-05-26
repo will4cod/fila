@@ -104,5 +104,26 @@ body{
 
     .busca-codigo button{
         width: 100%;
+        padding: 2%;
+    }
+} 
+
+@media only screen and (min-width: 850px) {
+    .busca-qrcode span img {
+        width: 60%;
+        margin: 2% auto;
+    }
+    
+    .busca-codigo{
+        align-items: center;
+    }
+    
+    .busca-codigo input {
+        border-radius: 5%;
+        width: 70%;
+    }
+
+    .fundo{
+        width: 40%;
     }
 } 

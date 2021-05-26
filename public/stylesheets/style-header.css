@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: flex-start;
     background-color: coral;
-    padding: 1% 0;
+    padding: 0.9% 0;
 }
 
 .navbar-brand{
@@ -68,12 +68,6 @@
 .navbar-nav li{
     padding: 1% 5%;
     margin: 0;
-}
-
-.nav-item div{
-    display: none;
-    position: absolute;
-    top: 100%;
 }
 
 .nav-item:hover {

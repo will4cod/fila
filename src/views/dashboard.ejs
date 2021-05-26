@@ -16,8 +16,14 @@
     <p class="lead mb-3">Ola <%- name %></p>
 
     <main class="conteudo-principal">
-        <section class="grafico">
-            <img src="/image/grafico.jpg" alt="">
+        <section class="controle">
+            <section class="grafico">
+                <img src="/image/grafico.jpg" alt="">
+            </section>
+
+            <section class="fila">
+                <%- include('controle/controle.ejs') %>
+            </section>
         </section>
 
         <section class="acoes">
